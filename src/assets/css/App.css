@@ -407,32 +407,90 @@
   color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 768px) {
+  /* body {
+    margin-left: 100px;
+    margin-right: 100px;
+  } */
+
+  .body,
+  .location-section,
+  .therapists {
+    flex-direction: column;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .banner-log-in-section,
+  .logo-section,
+  .services-section,
+  .location-section,
+  .therapists-section,
+  .footer {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner h1 {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .banner h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .log-in-section {
+    height: 150px;
+  }
+
+  .client-portal,
+  .appointments {
+    border: 3px solid white;
+    height: 60px;
+  }
+
+  .client-portal a,
+  .appointments a {
+    font-size: 20px;
+  }
+
+  .logo-section h2 {
+    font-size: 25px;
+  }
+
+  .offers {
+    flex-wrap: wrap;
+  }
+
+  .offer-items {
+    width: 50%;
+  }
+
+  .services-h1 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .map {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .therapist {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    height: 120px;
+    flex-wrap: wrap;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 100%;
   }
 }

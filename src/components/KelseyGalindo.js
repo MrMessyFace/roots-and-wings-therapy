@@ -5,7 +5,7 @@ const KelseyGalindo = () => {
     <div className="therapist">
       <div className="therapist-pic">
         <img
-          src={require("../assets/images/kelsey-galindo-01.JPEG")}
+          src={require("../assets/images/kelsey-galindo-01.jpg")}
           alt="Kelsey Galindo"
         />
       </div>
