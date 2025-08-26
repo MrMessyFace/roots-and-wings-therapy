@@ -5,6 +5,11 @@
   font-family: "Times New Roman", Times, serif;
 }
 
+.body {
+  display: flex;
+  text-align: center;
+}
+
 .container {
   position: relative;
   min-height: 100vh;
@@ -529,6 +534,10 @@
 
   .offer-items {
     width: 50%;
+  }
+
+  .offer-items img {
+    max-height: 200px;
   }
 
   .services-h1 {
