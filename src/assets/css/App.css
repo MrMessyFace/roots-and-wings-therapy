@@ -553,11 +553,22 @@
   .map,
   .location-info {
     width: 100%;
-    padding: 0px;
   }
 
+  .map img {
+    max-height: 300px;
+  }
+
+  .therapists-section h1 {
+    font-size: 40px;
+  }
   .therapist {
     margin-bottom: 10px;
+  }
+
+  .therapist-pic img {
+    height: 300px;
+    width: 300px;
   }
 
   .footer {
@@ -571,7 +582,7 @@
     width: 100%;
   }
 
-    .copyright-section {
+  .copyright-section {
     width: 160%;
   }
 
