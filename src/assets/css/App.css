@@ -204,6 +204,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .services,
@@ -321,7 +322,7 @@
 }
 
 .therapist-pic img {
-  max-height: 500px;
+  height: 500px;
   width: 500px;
   border-radius: 50%;
   border: 5px solid #48aead;
@@ -407,18 +408,7 @@
   color: black;
 }
 
-@media screen and (max-width: 768px) {
-  /* body {
-    margin-left: 100px;
-    margin-right: 100px;
-  } */
-
-  .body,
-  .location-section,
-  .therapists {
-    flex-direction: column;
-  }
-
+@media screen and (max-width: 1629px) {
   .banner-log-in-section,
   .logo-section,
   .services-section,
@@ -428,33 +418,105 @@
     width: 100%;
   }
 
-  .banner {
-    height: 300px;
-  }
-
-  .banner h1 {
-    font-size: 70px;
-    text-align: center;
-  }
-
-  .banner h2 {
-    font-size: 30px;
-    text-align: center;
-  }
-
   .log-in-section {
     height: 150px;
   }
 
+  .offer-items {
+    width: 50%;
+  }
+
+  .services-h1 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .location-section {
+    width: 60%;
+  }
+
+  .therapist-pic img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .copyright-section {
+    width: 126%;
+  }
+
+  .surprises-section {
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .logo-section,
+  .logo,
+  .location-section,
+  .therapists {
+    flex-direction: column;
+  }
+
+  .banner-log-in-section,
+  .logo-section,
+  .logo,
+  .services-section,
+  .location-section,
+  .therapists-section,
+  .footer {
+    width: 100%;
+  }
+
+  .banner {
+    height: 200px;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .banner h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .log-in-section {
+    height: 100px;
+  }
+
   .client-portal,
   .appointments {
-    border: 3px solid white;
-    height: 60px;
+    border: 2px solid white;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .client-portal a,
   .appointments a {
-    font-size: 20px;
+    font-size: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .logo {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-section h2 {
+    font-size: 40px;
+    font-weight: lighter;
+  }
+
+  .logo-section {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .logo img {
+    height: 200px;
   }
 
   .logo-section h2 {
@@ -470,11 +532,17 @@
   }
 
   .services-h1 {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
-  .map {
+  .services-list {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .map,
+  .location-info {
     width: 100%;
     padding: 0px;
   }
@@ -492,5 +560,17 @@
   .footer-middle,
   .footer-right {
     width: 100%;
+  }
+
+    .copyright-section {
+    width: 160%;
+  }
+
+  .surprises-section {
+    width: 175%;
+  }
+
+  .web-designer-section {
+    width: 110%;
   }
 }
