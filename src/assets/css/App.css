@@ -5,93 +5,13 @@
   font-family: "Times New Roman", Times, serif;
 }
 
-.body {
-  display: flex;
-  text-align: center;
-}
-
 .container {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .wrapper {
   padding-bottom: 50px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: white;
-  border-bottom: 5px solid black;
-  width: 100%;
-}
-
-.navbar-image {
-  margin-left: 20px;
-}
-
-.navbar-image img {
-  max-height: 200px;
-}
-
-.navbar-right {
-  display: flex;
-  align-items: baseline;
-  font-size: 35px;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.navbar-right p,
-.navbar-right a {
-  color: #d85c02;
-  text-decoration: none;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.navbar-right a:hover {
-  color: #48aead;
-}
-
-.client-portal,
-.appointments {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f88705;
-  /* background-color: #d85c02; */
-  border: 4px solid white;
-  border-radius: 20px;
-  width: 100%;
-  height: 80px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.client-portal a,
-.appointments a {
-  color: white;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: bold;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.client-portal:hover,
-.appointments:hover {
-  background-color: white;
-  border: 4px solid #f88705;
-  /* border: 3px solid #d85c02; */
-}
-
-.client-portal:hover a,
-.appointments:hover a {
-  color: #f88705;
 }
 
 .home-page {
@@ -118,8 +38,6 @@
 .banner-log-in-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   background-color: #48aead;
   color: white;
@@ -127,36 +45,67 @@
 }
 
 .banner h1 {
-  font-size: 100px;
+  font-size: clamp(1.8rem, calc(7vw + 1rem), 5rem);
   font-weight: lighter;
-  text-align: center;
-  /* -webkit-text-stroke: 1.5px black; */
 }
 
 .banner h2 {
-  font-size: 40px;
+  font-size: clamp(0.1rem, calc(4vw + 0.1rem), 2rem);
   font-weight: lighter;
-  /* -webkit-text-stroke: 0.7px black; */
+}
+
+.log-in-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: #48aead;
+}
+
+.client-portal,
+.appointments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f88705;
+  border: 4px solid white;
+  border-radius: 20px;
+  width: 100%;
+  height: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.client-portal a,
+.appointments a {
+  color: white;
+  text-decoration: none;
+  font-size: clamp(0.1rem, calc(4vw + 0.1rem), 2rem);
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.client-portal:hover,
+.appointments:hover {
+  background-color: white;
+  border: 4px solid #f88705;
+  cursor: pointer;
+}
+
+.client-portal:hover a,
+.appointments:hover a {
+  color: #f88705;
 }
 
 .headline-section {
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 20px;
-  font-weight: bold;
-  width: 100%;
   margin-bottom: 20px;
-}
-
-.log-in-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 200px;
-  width: 100%;
-  background-color: #48aead;
 }
 
 .logo-section {
@@ -189,7 +138,6 @@
 .services-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -201,7 +149,6 @@
 
 .offers {
   display: flex;
-  flex-direction: row;
   margin-bottom: 20px;
 }
 
@@ -217,8 +164,6 @@
 .services-h1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -248,14 +193,21 @@
 
 .location-section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom: 20px;
 }
 
-.map,
+.map {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  padding: 20px;
+}
+
 .location-info {
   display: flex;
   flex-direction: column;
@@ -268,7 +220,10 @@
 }
 
 .map img {
-  max-height: 400px;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 50%;
   margin-left: 50px;
   margin-right: 50px;
@@ -293,12 +248,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 80px;
 }
 
 .therapists-section h1 {
+  text-align: center;
   font-size: 50px;
   font-weight: lighter;
   margin-bottom: 20px;
@@ -306,10 +263,9 @@
 
 .therapists {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: baseline;
-  text-align: center;
+  width: 100%;
 }
 
 .therapist {
@@ -317,7 +273,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  width: 100%;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -327,8 +283,9 @@
 }
 
 .therapist-pic img {
-  height: 500px;
-  width: 500px;
+  height: 25rem;
+  width: 25rem;
+  object-fit: cover;
   border-radius: 50%;
   border: 5px solid #48aead;
 }
@@ -336,8 +293,6 @@
 .therapist-bio {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -413,7 +368,7 @@
   color: black;
 }
 
-@media screen and (max-width: 1629px) {
+@media (max-width: 1629px) {
   .banner-log-in-section,
   .logo-section,
   .services-section,
@@ -440,10 +395,10 @@
     width: 60%;
   }
 
-  .therapist-pic img {
+  /* .therapist-pic img {
     height: 400px;
     width: 400px;
-  }
+  } */
 
   .copyright-section {
     width: 126%;
@@ -454,7 +409,19 @@
   }
 }
 
-@media screen and (max-width: 428px) {
+/* @media (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+} */
+
+@media (max-width: 428px) {
   .logo-section,
   .logo,
   .location-section,
@@ -562,7 +529,10 @@
   .therapists-section h1 {
     font-size: 40px;
   }
+
   .therapist {
+    margin-left: 0px;
+    margin-right: 0px;
     margin-bottom: 10px;
   }
 
@@ -572,7 +542,7 @@
   }
 
   .footer {
-    height: 120px;
+    height: auto;
     flex-wrap: wrap;
   }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Banner from "../components/Banner";
 import Headline from "../components/Headline";
 import LogInSection from "../components/LogInSection";
@@ -23,6 +24,11 @@ const HomePage = () => {
         <LocationInfo />
       </div>
       <Therapists />
+      <div>
+        <Link to="/">
+          <p>Back to the top.</p>
+        </Link>
+      </div>
     </div>
   );
 };
