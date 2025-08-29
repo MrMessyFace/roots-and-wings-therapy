@@ -11,7 +11,7 @@
 }
 
 .wrapper {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .home-page {
@@ -322,16 +322,23 @@
 
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   position: absolute;
   background-color: #48aead;
   font-size: 14px;
   font-weight: bold;
-  height: 60px;
+  height: auto;
   bottom: 0;
   width: 100%;
+}
+
+.footer-size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-left,
@@ -391,9 +398,7 @@
   .banner-log-in-section,
   .group-photo-logo-section,
   .services-section,
-  .location-section,
-  .therapists-section,
-  .footer {
+  .location-section {
     width: 100%;
   }
 
@@ -477,7 +482,7 @@
 
 @media (max-width: 768px) {
   .wrapper {
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
   .banner {
@@ -523,10 +528,6 @@
     width: 40%;
   }
 
-  .footer {
-    height: 70px;
-  }
-
   .copyright-section {
     width: 300%;
   }
@@ -546,7 +547,7 @@
 
 @media (max-width: 425px) {
   .wrapper {
-    padding-bottom: 80px;
+    padding-bottom: 90px;
   }
 
   .banner {
@@ -635,8 +636,7 @@
     margin-bottom: 10px;
   }
 
-  .footer {
-    height: auto;
+  .footer-size {
     flex-wrap: wrap;
   }
 
@@ -647,13 +647,7 @@
   }
 
   .copyright-section,
-  .surprises-section,
-  .web-designer-section {
-    width: 200%;
+  .surprises-section {
     margin-bottom: 5px;
-  }
-
-  .copyright-section {
-    margin-top: 5px;
   }
 }
