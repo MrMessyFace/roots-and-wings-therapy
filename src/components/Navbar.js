@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="navbar-image">
           <Link to="/">
             <img
-              src={require("../assets/images/roots-and-wings-logo-01.png")}
+              src={require("../assets/images/roots-and-wings-logo-01a.png")}
               alt="Roots and Wings Therapy"
               title="Home"
             />

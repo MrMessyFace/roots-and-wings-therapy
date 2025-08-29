@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Headline from "../components/Headline";
 import LogInSection from "../components/LogInSection";
 import LogoSection from "../components/LogoSection";
+import GroupPhotoSection from "../components/GroupPhotoSection";
 import ServiceList from "../components/ServiceList";
 import LocationInfo from "../components/LocationInfo";
 import Map from "../components/Map";
@@ -17,12 +18,16 @@ const HomePage = () => {
         <LogInSection />
       </div>
       {/* <Headline /> */}
-      <LogoSection />
+      <div className="group-photo-logo-section">
+        <GroupPhotoSection />
+        <LogoSection />
+      </div>
       <ServiceList />
       <div className="location-section">
         <Map />
         <LocationInfo />
       </div>
+      <LogInSection />
       <Therapists />
       <div>
         <Link to="/">
