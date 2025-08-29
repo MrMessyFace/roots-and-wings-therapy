@@ -3,7 +3,7 @@ import React from "react";
 const LocationInfo = () => {
   return (
     <div className="location-info">
-      <p>Roots & Wings Therapy and Wellness</p>
+      <h3>Roots & Wings Therapy and Wellness</h3>
       <br></br>
       <p>2608 Hamilton Blvd</p>
       <p>Sioux City, IA 51106</p>

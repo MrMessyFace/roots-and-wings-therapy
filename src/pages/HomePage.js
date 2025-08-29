@@ -27,13 +27,7 @@ const HomePage = () => {
         <Map />
         <LocationInfo />
       </div>
-      <LogInSection />
       <Therapists />
-      <div>
-        <Link to="/">
-          <p>Back to the top.</p>
-        </Link>
-      </div>
     </div>
   );
 };

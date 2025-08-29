@@ -11,7 +11,7 @@
 }
 
 .wrapper {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .home-page {
@@ -39,7 +39,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #48aead;
   color: white;
   margin-bottom: 20px;
 }
@@ -133,8 +132,6 @@
 .logo-section {
   display: flex;
   justify-content: center;
-  background-color: white;
-  color: black;
   margin-left: 100px;
   margin-right: 150px;
 }
@@ -172,7 +169,11 @@
 
 .offers {
   display: flex;
-  margin-bottom: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .offer-items {
@@ -180,6 +181,10 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.offer-items img {
+  max-height: 300px;
 }
 
 .services,
@@ -216,8 +221,8 @@
 
 .location-section {
   display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
+  justify-content: space-evenly;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -227,8 +232,19 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 50%;
-  padding: 20px;
+}
+
+.map img {
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #48aead;
+}
+
+.map img:hover {
+  border: 5px solid #f88705;
 }
 
 .location-info {
@@ -238,23 +254,6 @@
   align-items: center;
   text-align: center;
   font-size: 20px;
-  width: 50%;
-  padding: 20px;
-}
-
-.map img {
-  max-width: 500px;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-left: 50px;
-  margin-right: 50px;
-  border: 5px solid #48aead;
-}
-
-.map img:hover {
-  border: 5px solid #f88705;
 }
 
 .location-info a {
@@ -274,7 +273,7 @@
   width: 100%;
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .therapists-section h1 {
@@ -286,7 +285,7 @@
 
 .therapists {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: baseline;
   width: 100%;
 }
@@ -294,11 +293,7 @@
 .therapist {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .therapist-pic {
@@ -317,6 +312,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 25rem;
 }
 
 .therapist-bio h2 {
@@ -393,7 +389,7 @@
 
 @media (max-width: 1440px) {
   .banner-log-in-section,
-  .logo-section,
+  .group-photo-logo-section,
   .services-section,
   .location-section,
   .therapists-section,
@@ -401,32 +397,13 @@
     width: 100%;
   }
 
-  .log-in-section {
-    height: 150px;
-  }
-
-  .offer-items {
-    width: 50%;
+  .group-photo-section {
+    margin-left: 100px;
   }
 
   .services-h1 {
     margin-left: 100px;
     margin-right: 100px;
-  }
-
-  .location-section,
-  .therapists {
-    width: 60%;
-  }
-
-  .therapist-pic img {
-    height: 20rem;
-    width: 20rem;
-  }
-
-  .therapist-bio {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   .copyright-section {
@@ -439,12 +416,25 @@
 }
 
 @media (max-width: 1024px) {
-  .offers {
-    flex-wrap: wrap;
+  .group-photo-logo-section {
+    margin-top: 10px;
   }
 
-  .offer-items {
-    width: 50%;
+  .group-photo-section img {
+    width: 500px;
+  }
+
+  .logo-section {
+    margin-left: 50px;
+  }
+
+  .logo-section img {
+    max-width: 250px;
+  }
+
+  .logo-section h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
   }
 
   .offer-items img {
@@ -455,13 +445,17 @@
     max-height: 350px;
   }
 
-  .therapists {
-    width: 20%;
-  }
-
   .therapist-pic img {
     height: 15rem;
     width: 15rem;
+  }
+
+  .therapist-bio {
+    width: 15rem;
+  }
+
+  .therapist-bio p {
+    font-size: 14px;
   }
 
   .copyright-section {
@@ -481,36 +475,13 @@
   }
 }
 
-/* @media (max-width: 425px) {
-  .logo-section,
-  .logo,
-  .location-section,
-  .therapists {
-    flex-direction: column;
-  }
-
-  .banner-log-in-section,
-  .logo-section,
-  .logo,
-  .services-section,
-  .location-section,
-  .therapists-section,
-  .footer {
-    width: 100%;
+@media (max-width: 768px) {
+  .wrapper {
+    padding-bottom: 50px;
   }
 
   .banner {
-    height: 200px;
-  }
-
-  .banner h1 {
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .banner h2 {
-    font-size: 20px;
-    text-align: center;
+    height: 300px;
   }
 
   .log-in-section {
@@ -519,48 +490,114 @@
 
   .client-portal,
   .appointments {
-    border: 2px solid white;
-    height: 40px;
+    height: 60px;
+  }
+
+  .client-portal a,
+  .appointments a {
+    font-size: 25px;
+  }
+
+  .group-photo-logo-section {
+    margin-bottom: 50px;
+  }
+
+  .group-photo-section img {
+    width: 400px;
+  }
+
+  .logo-section {
+    margin-left: 25px;
+  }
+
+  .logo-section img {
+    max-width: 200px;
+  }
+
+  .logo-section h2 {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+
+  .offer-items {
+    width: 40%;
+  }
+
+  .footer {
+    height: 70px;
+  }
+
+  .copyright-section {
+    width: 300%;
+  }
+
+  .privacy-section {
+    width: 300%;
+  }
+
+  .web-designer-section {
+    width: 300%;
+  }
+
+  .surprises-section {
+    width: 400%;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    padding-bottom: 80px;
+  }
+
+  .banner {
+    height: 200px;
+  }
+
+  .log-in-section,
+  .group-photo-logo-section,
+  .logo,
+  .location-section,
+  .therapists {
+    flex-direction: column;
+  }
+
+  .log-in-section {
+    height: 120px;
+  }
+
+  .client-portal,
+  .appointments {
+    border: 3px solid white;
+    height: 50px;
     margin-left: 5px;
     margin-right: 5px;
   }
 
   .client-portal a,
   .appointments a {
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 0px;
     margin-right: 0px;
   }
 
-  .logo {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo-section h2 {
-    font-size: 40px;
-    font-weight: lighter;
+  .group-photo-section {
+    margin-left: 0px;
   }
 
   .logo-section {
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
-  .logo img {
-    height: 200px;
+  .logo-section img {
+    height: auto;
+    max-width: 300px;
+    object-fit: cover;
   }
 
   .logo-section h2 {
-    font-size: 25px;
-  }
-
-  .offers {
-    flex-wrap: wrap;
-  }
-
-  .offer-items {
-    width: 50%;
+    font-size: 30px;
+    margin-bottom: 10px;
   }
 
   .offer-items img {
@@ -577,33 +614,25 @@
     margin-right: 5px;
   }
 
-  .map,
-  .location-info {
-    width: 100%;
-  }
-
   .map img {
     max-height: 300px;
+  }
+
+  .map {
+    margin-bottom: 10px;
   }
 
   .therapists-section h1 {
     font-size: 40px;
   }
 
+  .therapists {
+    justify-content: center;
+    align-items: center;
+  }
+
   .therapist {
-    margin-left: 0px;
-    margin-right: 0px;
     margin-bottom: 10px;
-  }
-
-  .therapist-pic img {
-    height: 300px;
-    width: 300px;
-  }
-
-  .therapist-bio {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   .footer {
@@ -617,15 +646,14 @@
     width: 100%;
   }
 
-  .copyright-section {
-    width: 160%;
-  }
-
-  .surprises-section {
-    width: 175%;
-  }
-
+  .copyright-section,
+  .surprises-section,
   .web-designer-section {
-    width: 110%;
+    width: 200%;
+    margin-bottom: 5px;
   }
-} */
+
+  .copyright-section {
+    margin-top: 5px;
+  }
+}
