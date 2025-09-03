@@ -458,6 +458,12 @@
   }
 }
 
+@media (max-width: 960px) {
+  .offer-items {
+    width: 40%;
+  }
+}
+
 @media (max-width: 768px) {
   .wrapper {
     padding-bottom: 60px;
@@ -478,10 +484,6 @@
   .logo-section h2 {
     font-size: 25px;
     margin-bottom: 0px;
-  }
-
-  .offer-items {
-    width: 40%;
   }
 
   .location-section,
