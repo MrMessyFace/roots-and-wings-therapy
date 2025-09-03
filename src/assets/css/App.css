@@ -401,6 +401,24 @@
 }
 
 @media (max-width: 1024px) {
+  .banner {
+    height: 300px;
+  }
+
+  .log-in-section {
+    height: 100px;
+  }
+
+  .client-portal,
+  .appointments {
+    height: 60px;
+  }
+
+  .client-portal a,
+  .appointments a {
+    font-size: 25px;
+  }
+
   .group-photo-logo-section {
     margin-top: 10px;
   }
@@ -419,7 +437,7 @@
   }
 
   .offer-items img {
-    max-height: 250px;
+    max-height: 200px;
   }
 
   .map img {
@@ -443,24 +461,6 @@
 @media (max-width: 768px) {
   .wrapper {
     padding-bottom: 60px;
-  }
-
-  .banner {
-    height: 300px;
-  }
-
-  .log-in-section {
-    height: 100px;
-  }
-
-  .client-portal,
-  .appointments {
-    height: 60px;
-  }
-
-  .client-portal a,
-  .appointments a {
-    font-size: 25px;
   }
 
   .group-photo-logo-section {
