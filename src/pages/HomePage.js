@@ -34,8 +34,8 @@ const HomePage = () => {
               addressCountry: "US",
             },
             telephone: "+1-712-227-3425",
-            url: "https://roots-and-wings-therapy-df6d29c35581.herokuapp.com/",
-            areaServed: ["Sioux City, IA", "Iowa"],
+            url: "https://www.rootsnwingstherapy.com",
+            areaServed: ["Sioux City", "Sioux City, IA", "Iowa"],
           })}
         </script>
       </Helmet>

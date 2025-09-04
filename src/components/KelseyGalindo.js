@@ -6,7 +6,8 @@ const KelseyGalindo = () => {
       <div className="therapist-pic">
         <img
           src={require("../assets/images/kelsey-galindo-01.jpg")}
-          alt="Kelsey Galindo"
+          alt={("Kelsey Galindo", "Roots & Wings Therapy and Wellness Sioux City")}
+          title="Kelsey Galindo"
         />
       </div>
       <div className="therapist-bio">

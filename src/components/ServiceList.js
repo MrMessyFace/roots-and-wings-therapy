@@ -8,23 +8,37 @@ const ServiceList = () => {
         <div className="offer-items">
           <img
             src={require("../assets/images/telehealth.png")}
-            alt="telehealth"
+            alt={
+              ("telehealth", "Roots & Wings Therapy and Wellness Sioux City")
+            }
           />
           <p>In-Person and Telehealth Appointments</p>
         </div>
         <div className="offer-items">
-          <img src={require("../assets/images/payments.png")} alt="payments" />
+          <img
+            src={require("../assets/images/payments.png")}
+            alt={
+              ("online payments",
+              "Roots & Wings Therapy and Wellness Sioux City")
+            }
+          />
           <p>Accepts Online Payments</p>
         </div>
         <div className="offer-items">
           <img
             src={require("../assets/images/insurance.png")}
-            alt="insurance"
+            alt={("insurance", "Roots & Wings Therapy and Wellness Sioux City")}
           />
           <p>Accepts Most Major Insurances</p>
         </div>
         <div className="offer-items">
-          <img src={require("../assets/images/clients.png")} alt="clients" />
+          <img
+            src={require("../assets/images/clients.png")}
+            alt={
+              ("accepting new clients",
+              "Roots & Wings Therapy and Wellness Sioux City")
+            }
+          />
           <p>Accepting New Clients</p>
         </div>
       </div>
