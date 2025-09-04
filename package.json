@@ -8,6 +8,7 @@
     "@babel/plugin-transform-async-generator-functions": "^7.28.0",
     "@babel/plugin-transform-object-rest-spread": "^7.28.0",
     "@babel/plugin-transform-optional-catch-binding": "^7.27.1",
+    "@dr.pogodin/react-helmet": "^3.0.2",
     "@testing-library/jest-dom": "^6.7.0",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
