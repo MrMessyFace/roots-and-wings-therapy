@@ -1,9 +1,10 @@
 import React from "react";
+import KatieMockler from "../components/KatieMockler";
 
 const KatiePage = () => {
   return (
     <div className="katie-page">
-      <h1>Katie Mockler</h1>
+      <KatieMockler />
     </div>
   );
 };

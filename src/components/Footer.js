@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer-size">
         <div className="footer-left">
           <div className="copyright-section">
-            <p>&copy; 2025 Roots and Wings Therapy and Wellness PLC.</p>
+            <p>&copy; 2026 Roots and Wings Therapy and Wellness PLC.</p>
             <p>All Rights Reserved.</p>
           </div>
         </div>

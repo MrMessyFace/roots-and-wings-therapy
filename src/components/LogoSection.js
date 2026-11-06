@@ -9,7 +9,8 @@ const LogoSection = () => {
           alt="Roots & Wings Therapy and Wellness Sioux City"
         />
         <h2>Sioux City, IA</h2>
-        <h2>(712) 227-3425</h2>
+        <h2>Call: (712) 227-3425</h2>
+        <h2>Fax: (712) 250-2929</h2>
       </div>
     </div>
   );

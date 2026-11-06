@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ClientPortal from "./ClientPortal";
-import Appointment from "./Appointment";
 
 const Navbar = () => {
   return (
@@ -18,19 +16,22 @@ const Navbar = () => {
         </div>
       </nav>
       <nav className="navbar-right">
-        <div>
-          <ClientPortal />
-        </div>
-        <div>
-          <Appointment />
-        </div>
+        {/* <Link to="/about">About Us</Link> */}
+        {/* <Link to="/services">Services</Link> */}
+        <Link to="/therapists">Therapists</Link>
         <a
-          href="https://www.facebook.com/profile.php?id=61577463938045"
+          href="https://rootsnwings.clientsecure.me/sign-in"
           target="_blank"
           rel="noopener noreferrer"
-          title="Facebook"
         >
-          <i className="fa-brands fa-facebook fa-2xl"></i>
+          Client Portal
+        </a>
+        <a
+          href="https://rootsnwings.clientsecure.me"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Appointment
         </a>
       </nav>
     </nav>

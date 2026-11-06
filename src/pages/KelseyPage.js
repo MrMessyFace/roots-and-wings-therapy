@@ -1,9 +1,10 @@
 import React from "react";
+import KelseyGalindo from "../components/KelseyGalindo";
 
 const KelseyPage = () => {
   return (
     <div className="kelsey-page">
-      <h1>Kelsey Galindo</h1>
+      <KelseyGalindo />
     </div>
   );
 };

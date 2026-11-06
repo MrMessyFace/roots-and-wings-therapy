@@ -1,9 +1,10 @@
 import React from "react";
+import SarahStevens from "../components/SarahStevens";
 
 const SarahPage = () => {
   return (
     <div className="sarah-page">
-      <h1>Sarah Stevens</h1>
+      <SarahStevens />
     </div>
   );
 };

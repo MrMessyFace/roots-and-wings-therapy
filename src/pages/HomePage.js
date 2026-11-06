@@ -1,8 +1,6 @@
 import React from "react";
 import { Helmet } from "@dr.pogodin/react-helmet";
 import Banner from "../components/Banner";
-import Headline from "../components/Headline";
-import LogInSection from "../components/LogInSection";
 import LogoSection from "../components/LogoSection";
 import GroupPhotoSection from "../components/GroupPhotoSection";
 import ServiceList from "../components/ServiceList";
@@ -40,9 +38,8 @@ const HomePage = () => {
         </script>
       </Helmet>
       <div className="home-page">
-        <div className="banner-log-in-section">
+        <div className="banner-section">
           <Banner />
-          <LogInSection />
         </div>
         {/* <Headline /> */}
         <div className="group-photo-logo-section">
@@ -54,7 +51,6 @@ const HomePage = () => {
           <Map />
           <LocationInfo />
         </div>
-        <Therapists />
       </div>
     </>
   );
